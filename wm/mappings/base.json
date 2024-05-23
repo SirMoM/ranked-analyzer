@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/"
+  },
+  "response": {
+    "transformers": [
+      "response-template"
+    ],
+    "status": 200,
+    "proxyBaseUrl": "{{#gt (randomInt lower=0 upper=1000) 950 }}http://localhost:42069/err{{else}}http://localhost:42069/200{{/gt}}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/err/"
+  },
+  "response": {
+    "status": 429,
+    "bodyFileName": "429.json",
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}
